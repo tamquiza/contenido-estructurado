@@ -6,18 +6,25 @@
   Variables reutilizables para mantener un sistema visual
   consistente en todo el documento.
 */
+@import url('https://use.typekit.net/kbl2trg.css');
 
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
+  --color-background: #231C07;
+  --color-text: #E6D9C7;
+  --color-accent: #E79600;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
+  --font-family-base: "georgia",sans-serif;
+  --
 
   --font-size-body: 1rem;
   --font-size-h1: 3rem;
+  --font-weight-h1: 400;
   --font-size-h2: 2rem;
+  --font-style-h2: italic;
+  --font-weight-h2: 400;
   --font-size-h3: 1.25rem;
+  
+  --text-align-1: center;
 }
 
 /*
@@ -53,6 +60,8 @@ body {
 
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
+
+    text-align: var(--text-align-1);
 }
 
 /*
@@ -66,10 +75,13 @@ body {
 
 h1 {
   font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  font-style: var(--font-style-h2);
+  font-weight: var(--font-weight-h2);
 }
 
 h3 {

@@ -7,24 +7,32 @@
   consistente en todo el documento.
 */
 @import url('https://use.typekit.net/kbl2trg.css');
+@import url("https://use.typekit.net/kbl2trg.css");
 
 :root {
   --color-background: #231C07;
   --color-text: #E6D9C7;
   --color-accent: #E79600;
 
-  --font-family-base: "georgia",sans-serif;
-  --
+  --font-family-base: "Georgia",sans-serif;
+  --font-family-body: "CoFo Sans Pro Georgian", sans-serif;
 
   --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-weight-h1: 400;
-  --font-size-h2: 2rem;
-  --font-style-h2: italic;
-  --font-weight-h2: 400;
-  --font-size-h3: 1.25rem;
+
+  --h1-font-size: 5rem;
+  --h1-font-weight: 400;
+
+  --h2-font-size: 2rem;
+  --h2-font-weight: 100;
+
+  --h3-font-size: 2.2rem;
+  --h3-font-style: italic;
+  --h3-font-weight: 100;
+
+  --p-font-size: 1.5rem;
   
   --text-align-1: center;
+  --text-align-2: left;
 }
 
 /*
@@ -35,14 +43,14 @@
   Selecciona todos los elementos HTML.
 */
 
-* {
+/* {
   box-sizing: border-box;
   /*
     Regla temporal para visualizar las cajas.
     Puede eliminarse cuando ya no sea necesaria.
   */
-  outline: 1px solid;
-}
+/*  outline: 1px solid;
+}*/
 
 
 /*
@@ -55,13 +63,12 @@
 body {
   margin: 0;
 
+  font-family: var(--font-family-body);
+  font-weight: 100;
   background-color: var(--color-background);
   color: var(--color-text);
 
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-body);
-
-    text-align: var(--text-align-1);
+  text-align: var(--text-align-1);
 }
 
 /*
@@ -74,19 +81,33 @@ body {
 */
 
 h1 {
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-h1);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
 }
 
 h2 {
-  font-size: var(--font-size-h2);
-  font-style: var(--font-style-h2);
-  font-weight: var(--font-weight-h2);
+  font-family: var(--font-family-body);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
 }
 
 h3 {
-  font-size: var(--font-size-h3);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-size: var(--h3-font-size);
+  font-style: var(--h3-font-style);
+  font-weight: var(--h3-font-weight);
 }
+
+p {
+  font-size: var(--p-font-size);
+  line-height: 1.8em;
+  max-width: 30em;
+  margin: 2em auto;
+}
+
 
 
 /*
@@ -118,7 +139,7 @@ a {
 */
 
 main {
-  width: 65%;
+  width: 60em;
   min-width: 290px;
   max-width: 1240px;
   margin: 0 auto;

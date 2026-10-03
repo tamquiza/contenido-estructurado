@@ -10,29 +10,36 @@
 @import url("https://use.typekit.net/kbl2trg.css");
 
 :root {
-  --color-background: #231C07;
-  --color-text: #E6D9C7;
-  --color-accent: #E79600;
+  --color-background: #000000;
+  --color-text: #FFFFFF;
+  --color-accent: #005B03;
 
   --font-family-base: "Georgia",sans-serif;
   --font-family-body: "CoFo Sans Pro Georgian", sans-serif;
 
   --font-size-body: 1rem;
 
-  --h1-font-size: 5rem;
+  --h1-font-size: 7rem;
   --h1-font-weight: 400;
 
-  --h2-font-size: 2rem;
+  --h2-font-size: 1.9rem;
   --h2-font-weight: 100;
 
-  --h3-font-size: 2.2rem;
+  --h3-font-size: 3rem;
   --h3-font-style: italic;
   --h3-font-weight: 100;
 
+  --h4-font-family: "Georgia", sans-serif;
+  --h4-font-size: 1.7rem;
+  --h4-font-style: italic;
+  --h4-font-weight: 100;
+
+  --h5-font-family: "CoFo Sans Pro Georgian", sans-serif;
+  --h5-font-size: 4rem;
+  --h5-font-weight: 100;
+
   --p-font-size: 1.5rem;
   
-  --text-align-1: center;
-  --text-align-2: left;
 }
 
 /*
@@ -60,17 +67,91 @@
 
   Define el sistema visual base del documento.
 */
-body {
-  margin: 0;
+header {
+  margin: 4rem 3rem 20rem 10rem;
+}
+header.diario {
+  margin: 13rem auto;
+}
 
+h1 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  color: var(--color-background);
+  line-height: 1em;
+  text-align: right;
+  margin: 0 0 0 2em;
+}
+h1.diario {
+  text-align: center;
+  margin:0 auto;
+}
+h1.suelo {
+  text-align: center;
+  margin: .5em 0 0 0;
+  color: var(--color-text);
+}
+h1.clima {
+  text-align: center;
+  margin: .5em 0 0 0;
+}
+
+h2 {
+  font-family: var(--font-family-body);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  color: var(--color-background);
+  text-align: right;
+  margin: .5em 0 0 0;
+}
+h2.diario {
+  text-align: center;
+  margin: .5em 0 0 0;
+}
+h2.suelo {
+  text-align: center;
+  margin: .5em 0 0 0;
+  color: var(--color-text);
+}
+h2.clima {
+  text-align: center;
+  margin: .5em 0 0 0;
+}
+
+body {
+
+  margin: 0 auto;
   font-family: var(--font-family-body);
   font-weight: 100;
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-background);
 
-  text-align: var(--text-align-1);
+  text-align: center;
 }
 
+body.foto {
+  background: url("./img/foto-3.jpg") no-repeat center / cover fixed;
+}
+body.diario {
+  background: url("./img/foto-4.jpg") no-repeat center / cover fixed;
+}
+body.suelo {
+  background: url("./img/suelo-2.jpg") no-repeat center / cover fixed;
+}
+body.hongos {
+  background: url("./img/hongos-2.jpg") no-repeat center / cover fixed;
+}
+body.veg{
+  background: url("./img/veg-2.jpg") no-repeat center / cover fixed;
+}
+body.clima {
+  background: url("./img/clima-2.jpg") no-repeat center / cover fixed;
+}
+body.varilla {
+  background: url("./img/varilla-2.jpg") no-repeat center / cover fixed;
+}
 /*
   ============================================================
   JERARQUÍA TIPOGRÁFICA
@@ -80,35 +161,108 @@ body {
   CSS controla su representación visual.
 */
 
-h1 {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-body);
-  font-size: var(--h1-font-size);
-  font-weight: var(--h1-font-weight);
-}
-
-h2 {
-  font-family: var(--font-family-body);
-  font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
-}
-
 h3 {
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
+  margin: 2.7em auto .5em;
 }
+
+h4 {
+  font-family: var(--h4-font-family);
+  font-size: var(--h4-font-size);
+  font-style: var(--h4-font-style);
+  font-weight: var(--h4-font-weight);
+  margin: 3em auto 3em;
+  max-width: 20em;
+  line-height: 1.8em;
+}
+h4.suelo {
+  font-family: var(--h4-font-family);
+  font-size: var(--h4-font-size);
+  font-style: var(--h4-font-style);
+  font-weight: var(--h4-font-weight);
+  margin: 2em auto 2em;
+  max-width: 20em;
+  line-height: 1.8em;
+  color: var(--color-text);
+}
+
+h5 {
+  font-family: var(--h5-font-family);
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+  color: var(--color-background);
+  margin: .6em auto .6em;
+  line-height: 10rem;
+  background-color: var(--color-text);
+  border-radius: .7rem;
+}
+h5.suelo {
+  background: url("./img/suelo.jpg") no-repeat center / cover;
+  color: var(--color-text);
+}
+h5.hongos {
+  background: url("./img/hongos.jpg") no-repeat center / cover;
+  color: var(--color-text);
+}
+h5.vegetacion {
+  background: url("./img/veg.jpg") no-repeat center / cover;
+  color: var(--color-text);
+}
+h5.clima {  
+  background: url("./img/clima.jpg") no-repeat center / cover;
+  color: var(--color-background);
+}
+h5.varilla {
+  background: url("./img/varilla.jpg") no-repeat center / cover;
+  color: var(--color-text);
+} 
 
 p {
   font-size: var(--p-font-size);
-  line-height: 1.8em;
-  max-width: 30em;
-  margin: 2em auto;
+  line-height: 2.1em;
+  max-width: 26em;
+  margin: 0 auto 1em;
+}
+p.suelo {
+  font-size: var(--p-font-size);
+  line-height: 2.1em;
+  max-width: 26em;
+  margin: 0 auto 2em;
+  color: var(--color-text);
 }
 
+p.suelo span {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.3em 0.6em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 
+p.diario {
+  line-height: 2.1em;
+  margin:0 auto;
+}
+
+p.flecha {
+  font-size: var(--p-font-size);
+  line-height: 2.1em;
+  max-width: 26em;
+  margin: 0 auto 1em;
+  color: var(--color-text);
+}
+
+article {
+  color: var(--color-background);
+  padding: 1em;
+  font-family: Georgia, serif;
+  font-style: italic;
+  max-width: 30em;
+  margin: 0 auto 20em;
+}
 
 /*
   ============================================================
@@ -122,7 +276,10 @@ a {
   color: var(--color-accent);
 }
 
-
+a.especial {
+  color: (var(--color-background));
+  text-decoration: none;
+}
 /*
   ============================================================
   CONTENEDOR PRINCIPAL
@@ -157,11 +314,24 @@ main,
 footer {
   padding: 2rem;
 }
+main.suelo {
+  margin: 0 auto 10rem;
+}
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 20rem;
 }
 
 nav a {
   margin-right: 1rem;
+}
+
+nav.indice{
+  text-decoration: underline;
+  background-color: #FFFFFF;
+  color:#000000;
+  max-width: 40%;
+  margin: 0 auto;
+  line-height: 1.7em;
+  border-radius: .25em;
 }

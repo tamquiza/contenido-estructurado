@@ -21,13 +21,9 @@ CSS
 
 # Prompt base
 
-Quiero construir un documento digital sobre:
-
-**[TEMA]**
-
 Necesito organizar información sobre:
 
-**[TIPO DE CONTENIDO O COLECCIÓN]**
+condiciones climatológicas, tipo de suelo, tipo de vegetación y hongos que reflejen patrones visibles que se hayan encontrado en fosas clandestinas descubiertas por estos colectivos de búsqueda. y sus metodologías para encontrarlas. ¿cómo llegaron a esos lugares?
 
 Antes de generar HTML, investiga y estructura la información.
 
@@ -40,11 +36,11 @@ posteriormente para generar una página web.
 
 Cada elemento debe incluir los siguientes campos:
 
-- [CAMPO 1]
-- [CAMPO 2]
-- [CAMPO 3]
-- [CAMPO 4]
-- [CAMPO 5]
+- coordenadas
+- climatología
+- tipo de suelo
+- estudios de vegetación
+- micología
 
 Todos los elementos deben mantener exactamente la misma estructura.
 

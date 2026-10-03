@@ -22,7 +22,7 @@
   <!-- Hoja de estilos externa -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="foto">
 
   <!--
     HEADER
@@ -30,10 +30,9 @@
   -->
   <header>
 
-    <h1>Mamá habla con la tierra</h1>
-
-    <h2>Cómo mi mamá aprendió a leer su entorno a partir del dolor</p>
-
+    <h1>Mi mamá habla con la tierra</h1>
+    <h2>Cómo mi mamá aprendió a leer su entorno a partir del dolor</h2>
+  
   </header>
 
   <!--
@@ -51,8 +50,8 @@
       <h3>Antes de empezar...</h3>
 
       <p>
-        No soy yo la protagonista de esta historia. Es mi hermanito.
-        Y también es mi mamá, aunque ella nunca lo hubiera querido.
+        No soy yo la protagonista de esta historia. <strong><em>Es mi hermanito.
+        Y también es mi mamá</em></strong>, aunque ella nunca lo hubiera querido.
       </p>
       
       <p>
@@ -64,55 +63,76 @@
         ARTICLE
         Representa una unidad de contenido dentro de esta sección.
       -->
-      <article>
-
         <h3>El día que mamá dejó de esperar</h3>
 
         <p>
           Durante meses, mamá esperó una llamada, una noticia, 
           algo. Se quedaba dormida junto al teléfono. Iba a la 
-          fiscalía y volvía con las manos vacías, siempre con 
-          la misma frase: "seguimos investigando".
+          fiscalía y <strong><em>volvía con las manos vacías, 
+          </em></strong>siempre con la misma frase: <strong><em>
+          "seguimos investigando".</em></strong>
         </p>
-        <p>
+
+        <p><strong><em>
           Pero un día dejó de esperar.
-        </p>
+        </em></strong></p>
+
         <p>
         Empezó a ir los sábados a las reuniones de un colectivo 
         de búsqueda. Casi todas eran madres, como ella, que se 
         juntaban no para llorar (aunque también lloraban), sino 
-        para aprender juntas.
+        para <strong><em>aprender juntas.</em></strong>
         </p>
+
         <p>
         Sin darme cuenta, el día que yo la acompañé, empezaría 
         a entender el lenguaje más triste y necesario que he 
-        aprendido en mi vida:<nav><a href="./el-lenguaje-de-la-tierra.html">
-          el lenguaje de la tierra</a></nav>
+        aprendido en mi vida: el lenguaje de la tierra.
         </p>
 
-      </article>
     </section>
-  </main>
 
+    <article>
+      <p class="diario">
+      <span>
+        Si quieres aprenderlo también, puedes seguir leyendo 
+        <strong><a href="./diario.html" target="_blank" rel="noopener noreferrer">
+        nuestro diario de la tierra →</a></strong>
+      </span>
+      </p>
+    </article>
+  </main>
       <!--
       NAV
       Contiene enlaces principales de navegación.
     -->
-    <nav>
-      <a href="#elementos">El lenguaje de la tierra</a>
-      <a href="#estructura">Estructura</a>
-      <a href="#jerarquia">Jerarquía</a>
-    </nav>
-
   <!--
     FOOTER
     Contiene información de cierre o complementaria.
   -->
-  <footer>
+ <!--<footer>
 
     <p>Guía de estudio · HTML + CSS</p>
 
+  </footer>-->
+
+  <footer>
+    <nav class="indice">
+
+      <a class="especial" href="./diario.html">Diario</a>
+      <a class="especial" href="./suelo.html" target="_blank" 
+      rel="noopener noreferrer">Suelo</a>
+      <a class="especial" href="./hongos.html" target="_blank" 
+      rel="noopener noreferrer">Hongos</a>
+      <a class="especial" href="./veg.html" target="_blank" 
+      rel="noopener noreferrer">Vegetación</a>
+      <a class="especial" href="./clima.html" target="_blank" 
+      rel="noopener noreferrer">Clima</a>
+      <a class="especial" href="./varilla.html" target="_blank" 
+      rel="noopener noreferrer">Varilla</a>
+
+    </nav>
   </footer>
 
-</body>
+</body class="foto">
 </html>
